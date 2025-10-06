@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f, #ff6f91, #845ec2);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    color: #333;
+    line-height: 1.6;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* -------------------------------
+   HEADER
+------------------------------- */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3, #ff9068);
+    color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* -------------------------------
+   NAVIGATION
+------------------------------- */
+nav {
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #ff4d6d;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(90deg, #ff4d6d, #ff758c);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+}
+
+/* -------------------------------
+   MAIN CONTENT
+------------------------------- */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ✅ Center align h2 */
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+main h3 {
+    margin-bottom: 15px;
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* -------------------------------
+   LISTS
+------------------------------- */
+ul, ol {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* -------------------------------
+   PROFILE IMAGE
+------------------------------- */
+img {
+    margin: 20px 0;
+    border-radius: 50%;
+    border: 5px solid #ff4d6d;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255,77,109,0.6);
+}
+
+/* -------------------------------
+   TABLE STYLES
+------------------------------- */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+table th {
+    background: linear-gradient(90deg, #ff758c, #ff4d6d);
+    color: white;
+    text-transform: uppercase;
+}
+
+table tbody tr:hover {
+    background: #fff0f5;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+table tfoot {
+    background: #ffe6f0;
+    font-weight: bold;
+}
+
+/* -------------------------------
+   FORMS
+------------------------------- */
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #ff4d6d;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #ff758c;
+    box-shadow: 0 0 15px rgba(255,77,109,0.4);
+    outline: none;
+}
+
+/* ✅ Stylish checkbox fix */
+input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+    transform: scale(1.2);
+    accent-color: #ff4d6d;    /* theme color */
+    box-shadow: none;
+    outline: none;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+form button {
+    background: linear-gradient(90deg, #ff4d6d, #ff758c);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(255,77,109,0.5);
+}
+
+/* -------------------------------
+   FOOTER
+------------------------------- */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(90deg, #ff4d6d, #ff758c, #ff9aa2);
+    color: white;
+    font-size: 1rem;
+    margin-top: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+/* -------------------------------
+   RESPONSIVE
+------------------------------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+    }
+}

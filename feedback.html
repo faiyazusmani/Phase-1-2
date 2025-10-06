@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Submit Your Feedback</h1>
+        <p>We value your thoughts! Share your suggestions or comments below.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Form -->
+    <main>
+        <h2>Your Feedback</h2>
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="feedback-type">Type of Feedback:</label><br>
+            <select id="feedback-type" name="feedback-type">
+                <option value="general">General</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="complaint">Complaint</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message here..."></textarea><br><br>
+
+            <label>
+                <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to my Channel
+            </label>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Student Profile & Course Portal | Designed with ❤️ Faiyaz Usmani</p>
+    </footer>
+
+</body>
+</html>
